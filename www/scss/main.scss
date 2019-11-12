@@ -1,0 +1,82 @@
+
+$primary-color: #039a9a;
+$secondary-color: #90d033;
+$bg-color: #cccccc;
+
+// @import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg-color;
+    color: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.main-header {
+    height: 90px;
+}
+
+.sidebar {
+    margin-top: 40px;
+}
+
+.skin-blue .main-header .navbar {
+    background: $secondary-color;
+}
+
+.sidebar-toggle {
+    display: none;
+}
+
+.skin-blue .main-header .logo {
+    background: white;
+    height: 90px;
+}
+
+.skin-blue .main-header .logo:hover {
+    background: white;
+}
+
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    color: #ffffff;
+    background: $primary-color;
+}
+
+.skin-blue .sidebar-menu>li>a {
+    border-left: none;
+}
+
+#svg {
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.progress-bar {
+    background: $primary-color;
+}
+
+// Visualiserung 
+
+.vis-item {
+    text-align: center;
+    color: #ffffff;
+    background: $primary-color;
+}
+
+.vis-item.vis-point.vis-selected, .vis-item.vis-selected {
+    background-color: $secondary-color;
+    font-weight: bold;
+    border-color: black;
+    cursor: pointer;
+}
+
+.vis-item {
+    border-color: $bg-color;
+    cursor: pointer;
+}
